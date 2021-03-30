@@ -15,7 +15,7 @@ export default function Root(props: IRootProps) {
       phone,
     } as IContact;
 
-    props.publish("CONTACT_ADDED", newContact);
+    props.eventer.publish("CONTACT_ADDED", newContact);
 
     setName("");
     setPhone("");
